@@ -1,0 +1,205 @@
+import java.util.*;
+
+class Hw3{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		
+	int num1=sc.nextInt();
+	int num2=sc.nextInt();	
+	
+	int num3= (num1>num2)?num1+num2:num1-num2;
+		System.out.println("Answer="+num3);
+		
+	}
+	
+}
+
+
+
+import java.util.*;
+class Leapyear
+{
+	 public static void main(String args[])
+  
+  {
+	 Scanner sc=new Scanner(System.in);
+	   
+	   System.out.println("Enter year");
+	   int year=sc.nextInt();
+	   
+	   if((year%400==0) || (year%4==0))
+	   {
+		   System.out.println("leap");
+	   }
+      
+	   else
+	   {
+		   System.out.println("non leap");
+	   }
+	   
+	   
+	   
+  }
+	
+}
+
+
+import java.util.*;
+class Marks
+{
+	public static void main(String args[])
+	{
+    System.out.println("Enter the Marks out of 100");
+	
+	Scanner sc = new Scanner(System.in);
+	int num=sc.nextInt();
+		
+if (num>=95){
+	System.out.println("Distiction");
+	}
+ else if (num>=85 && num<95)
+	{
+	System.out.println("First Division");
+	
+	}
+else if (num>=75 && num<85)
+{
+	System.out.println("Average");
+}
+else {
+	System.out.println("you are below average");
+}
+	}
+}
+
+
+
+
+Class Maxmin{
+import java.util.Scanner;
+public static void main(String args[])
+
+Scanner sc=new Scanner (System.in);
+System.out.println("Enter the 3 number a,b and c");
+
+int a=sc.next();
+int b=sc.next();
+int c=sc.next();
+(a>b?a>c:b>c)
+
+
+
+
+
+
+
+
+
+/*import java.util.Scanner;
+class maxmin{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a,b,c");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		if(a>b && a>c){
+			System.out.println("A is greatest");
+		}
+		else if(b>c){
+			System.out.println("B is greatest");
+		}
+		else {
+			System.out.println("C is greatest");
+		}
+	}
+}*\
+
+
+
+
+class Salary 
+{
+public static void main(String args[])
+{ 
+double basicSalary=10000.478936;
+double TA=5600.6778;
+double PA=7000.5674;
+double DA =0.14*basicSalary;
+double TaxDeduction= (0.0176*DA);
+
+ System.out.println("basicSalary  ="+basicSalary);
+ System.out.println("Travlling allowance ="+TA);
+ System.out.println("Petrol Allowance = "+PA);
+ System.out.println("DA               ="+DA);
+ System.out.println("Tax Deduction ="+TaxDeduction);
+ 
+ Double GrossSalary = ((basicSalary+TA+DA+PA)-TaxDeduction);
+ System.out.println("Total Salary="+GrossSalary);
+ }
+ 
+}
+
+
+import java.util.*;
+class voter
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+
+System.out.println("If you are Indian enter 1 if not enter 0");
+int count=sc.nextInt();
+
+System.out.println("Enter your age");
+int age=sc.nextInt();
+}
+System.out.println((count==1 && age>18)?"you are eligible":Yor are not eligible);
+
+}
+
+
+Class Max
+{
+	int min, max;
+Scanner s = new Scanner(System.in);
+System.out.print("Enter a Value: ");
+int val = s.nextInt();
+min = max = val;
+
+while (val != 0) {
+  System.out.print("Enter a Value: ");
+  val = s.nextInt();
+  if (val < min) {
+      min = val;
+  }
+  if (val > max) {
+     max = val;
+  }
+};
+System.out.println("Min: " + min);
+System.out.println("Max: " + max);
+}
+
+
+class tempconversion{
+public static void main(String args[])
+
+{
+double temp_c=32.5;
+//System.out.println("temp in C is="+temp_c);
+double temp_f=((9/5)*temp_c+32);
+System.out.println("temp in F is ="+temp_f);
+ temp_f=43.5;
+ temp_c=((5/9)*temp_f+32);
+System.out.println("temp in C is="+temp_c);
+}
+}
+
+
+
+
+
+
